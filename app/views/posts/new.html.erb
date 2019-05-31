@@ -1,0 +1,20 @@
+<%= form_for @post do |f| %>
+
+  <div class="field">
+    <%= f.label :title, "タイトル" %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content, "内容" %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "画像" %>
+    <%= f.file_field :image %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit "登録する" %>
+  </div>
+<% end %>
